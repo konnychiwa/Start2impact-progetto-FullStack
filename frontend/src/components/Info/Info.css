@@ -1,0 +1,53 @@
+.info {
+  font-size: max(1.2vw, 22px);
+  text-align: center;
+}
+
+.info h2 {
+  font-size: max(1.7vw, 40px);
+  color: #c3a07a;
+}
+
+.how-to-use {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: max(2vw, 10px);
+}
+
+.how-to-use div {
+  width: max(30vw, 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.info-middle {
+  background-color: #c3a07a;
+  border-radius: 4px;
+  padding: 10px 0px;
+}
+
+.how-to-use img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 750px) {
+  .info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    font-size: max(1vw, 18px);
+  }
+  .info h2 {
+    font-size: max(1vw, 30px);
+  }
+  .info img {
+    max-width: 60px;
+  }
+}

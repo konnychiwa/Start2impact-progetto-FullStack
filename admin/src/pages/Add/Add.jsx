@@ -10,7 +10,7 @@ const Add = ({ url }) => {
     name: '',
     description: '',
     price: '',
-    category: 'Salad',
+    category: 'Insalate',
   });
 
   const onChangeHandler = (event) => {
@@ -33,7 +33,7 @@ const Add = ({ url }) => {
         name: '',
         description: '',
         price: '',
-        category: 'Salad',
+        category: 'Insalate',
       });
       setImage(false);
       toast.success(response.data.message);
@@ -90,12 +90,12 @@ const Add = ({ url }) => {
               value={data.category}
               name="category"
             >
-              <option value="Salad">Salad</option>
+              <option value="Insalate">Insalate</option>
               <option value="Rolls">Rolls</option>
               <option value="Desserts">Desserts</option>
-              <option value="Sandwich">Sandwich</option>
-              <option value="Cake">Cake</option>
-              <option value="Pure Veg">Pure Veg</option>
+              <option value="Panini">Panini</option>
+              <option value="Torte">Torte</option>
+              <option value="Vegetariano">Vegetariano</option>
               <option value="Pasta">Pasta</option>
               <option value="Noodles">Noodles</option>
             </select>
@@ -107,7 +107,7 @@ const Add = ({ url }) => {
               value={data.price}
               type="Number"
               name="price"
-              placeholder="20$"
+              placeholder="20€"
             />
           </div>
         </div>

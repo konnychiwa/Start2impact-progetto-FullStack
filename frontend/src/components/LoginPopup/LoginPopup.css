@@ -1,6 +1,6 @@
 .login-popup {
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   width: 100%;
   height: 100%;
   background-color: #00000090;
@@ -66,7 +66,7 @@
   margin-top: 5px;
 }
 
-.login-popup p span {
+.login-popup-container p span {
   color: #c3a07a;
   font-weight: 500;
   cursor: pointer;

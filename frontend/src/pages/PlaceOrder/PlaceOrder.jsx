@@ -27,18 +27,18 @@ const PlaceOrder = () => {
           <div>
             <div className="cart-total-details">
               <p>Totale senza tassa</p>
-              <p>${getTotalCartAmount()}</p>
+              <p>{getTotalCartAmount()}€</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <p>Tassa sulla spedizione</p>
-              <p>${getTotalCartAmount() === 0 ? 0 : 2}</p>
+              <p>{getTotalCartAmount() === 0 ? 0 : 2}€</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <b>Totale</b>
               <b>
-                ${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2}
+                {getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2}€
               </b>
             </div>
           </div>

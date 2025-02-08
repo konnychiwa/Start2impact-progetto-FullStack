@@ -2,8 +2,6 @@ import mongoose from 'mongoose';
 
 export const connectDB = async () => {
   await mongoose
-    .connect(
-      'mongodb+srv://konny:NJcACAysZni2owOC@cluster0.q5lb4.mongodb.net/proj-FullStack'
-    )
+    .connect(process.env.MONGO_URI)
     .then(() => console.log('DB Connected'));
 };

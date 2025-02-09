@@ -8,9 +8,29 @@
   scroll-behavior: smooth;
 }
 
+html,
 body {
   min-height: 100vh;
   background-color: #fffff0;
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content > .app {
+  flex: 1;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 a {

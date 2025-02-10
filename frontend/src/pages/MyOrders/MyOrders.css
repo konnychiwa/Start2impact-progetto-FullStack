@@ -39,7 +39,7 @@
   border-radius: 4px;
   background-color: #c3a07a;
   cursor: pointer;
-  color: #454545;
+  color: black;
 }
 
 @media (max-width: 900px) {

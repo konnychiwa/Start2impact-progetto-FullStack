@@ -11,7 +11,7 @@ const loginUser = async (req, res) => {
 
     if (!user) {
       return res
-        .status(400)
+        .status(404)
         .json({ success: false, message: "L'utente non esiste" });
     }
 
@@ -19,12 +19,12 @@ const loginUser = async (req, res) => {
 
     if (!isMatch) {
       return res
-        .status(400)
+        .status(401)
         .json({ success: false, message: 'Credenziali invalide' });
     }
 
     const token = createToken(user._id);
-    res.status(201).json({ success: true, token });
+    res.status(200).json({ success: true, token });
   } catch (error) {
     console.log(error);
     res.status(500).json({ success: false, message: 'Errore' });
@@ -44,19 +44,19 @@ const registerUser = async (req, res) => {
     const exist = await userModel.findOne({ email });
     if (exist) {
       return res
-        .status(400)
+        .status(409)
         .json({ success: false, message: "L'utente esiste già" });
     }
 
     // validating email format & strong password
     if (!validator.isEmail(email)) {
-      return res.status(400).json({
+      return res.status(406).json({
         success: false,
         message: 'Immettere una mail valida',
       });
     }
     if (password.length < 8) {
-      return res.status(400).json({
+      return res.status(411).json({
         success: false,
         message: 'Immettere una password più forte',
       });

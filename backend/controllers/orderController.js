@@ -7,7 +7,7 @@ dotenv.config();
 
 export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-const frontend_url = 'http://localhost:5173';
+const frontend_url = 'http://localhost:5174';
 
 // placing user order
 const placeOrder = async (req, res) => {
@@ -84,4 +84,28 @@ const userOrders = async (req, res) => {
   }
 };
 
-export { placeOrder, verifyOrder, userOrders };
+// List all orders
+const listOrders = async (req, res) => {
+  try {
+    const orders = await orderModel.find({});
+    res.status(201).json({ success: true, data: orders });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ success: false, message: 'Errore' });
+  }
+};
+
+// update orders
+const updateStatus = async (req, res) => {
+  try {
+    await orderModel.findByIdAndUpdate(req.body.orderId, {
+      status: req.body.status,
+    });
+    res.status(201).json({ success: true, message: 'Stato aggiornato' });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ success: false, message: 'Errore' });
+  }
+};
+
+export { placeOrder, verifyOrder, userOrders, listOrders, updateStatus };

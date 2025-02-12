@@ -116,7 +116,7 @@ const LoginPopup = ({ setShowLogin }) => {
               onChange={onChangeHandler}
               value={data.password}
               type="password"
-              placeholder="min 8 caratteri"
+              placeholder="Password"
               required
             />
           )}

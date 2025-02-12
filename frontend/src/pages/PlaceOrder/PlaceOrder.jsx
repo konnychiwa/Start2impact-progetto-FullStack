@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './PlaceOrder.css';
 import { StoreContext } from '../../context/StoreContext';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const PlaceOrder = () => {
   const { getTotalCartAmount, token, food_list, cartItems, url } =
@@ -55,8 +56,10 @@ const PlaceOrder = () => {
   useEffect(() => {
     if (!token) {
       navigate('/cart');
+      toast.error('Devi accedere per fare un ordine');
     } else if (getTotalCartAmount() === 0) {
       navigate('/cart');
+      toast.error('Metti qualcosa nel carrello per proseguire');
     }
   }, [token]);
 

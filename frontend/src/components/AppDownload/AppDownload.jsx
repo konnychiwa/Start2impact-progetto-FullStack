@@ -5,7 +5,7 @@ const AppDownload = () => {
   return (
     <div className="app-download" id="app-download">
       <p>
-        Coming soon - Download the Mobile App <br />
+        Download the Mobile App <br />
         Cookio App
       </p>
       <div className="app-download-platforms">

@@ -3,17 +3,13 @@ import './LoginPopup.css';
 import { assets } from '../../assets/assets';
 import { StoreContext } from '../../context/StoreContext';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const LoginPopup = ({ setShowLogin }) => {
   const { url, setToken } = useContext(StoreContext);
-
   const [currentState, setCurrentState] = useState('Login');
-
-  const [data, setData] = useState({
-    name: '',
-    email: '',
-    password: '',
-  });
+  const [data, setData] = useState({ name: '', email: '', password: '' });
+  const [loading, setLoading] = useState(false);
 
   const onChangeHandler = (event) => {
     const name = event.target.name;
@@ -31,14 +27,39 @@ const LoginPopup = ({ setShowLogin }) => {
       newUrl += '/api/user/register';
     }
 
-    const response = await axios.post(newUrl, data);
+    setLoading(true);
 
-    if (response.data.success) {
-      setToken(response.data.token);
-      localStorage.setItem('token', response.data.token);
-      setShowLogin(false);
-    } else {
-      alert(response.data.message);
+    try {
+      const response = await axios.post(newUrl, data);
+
+      if (response.data.success) {
+        setToken(response.data.token);
+        localStorage.setItem('token', response.data.token);
+        setShowLogin(false);
+        if (response.status === 200) {
+          toast.success('Accesso eseguito');
+        } else if (response.status === 201) {
+          toast.success('Account creato');
+        }
+      } else {
+        toast.error(response.data.message || 'Errore sconosciuto');
+      }
+    } catch (error) {
+      if (error.status === 404) {
+        toast.error("L'utente non esiste");
+      } else if (error.status === 401) {
+        toast.error('Credenziali invalide');
+      } else if (error.status === 409) {
+        toast.error("L'utente non esiste");
+      } else if (error.status === 406) {
+        toast.error('Immettere una mail valida');
+      } else if (error.status === 411) {
+        toast.error('Immettere una password più forte');
+      } else {
+        toast.error('Errore');
+      }
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -52,7 +73,7 @@ const LoginPopup = ({ setShowLogin }) => {
 
   return (
     <div className="login-popup">
-      <form onSubmit={onLogin} action="" className="login-popup-container">
+      <form onSubmit={onLogin} className="login-popup-container">
         <div className="login-popup-title">
           <h2>{currentState}</h2>
           <img
@@ -80,17 +101,32 @@ const LoginPopup = ({ setShowLogin }) => {
             placeholder="La tua mail"
             required
           />
-          <input
-            name="password"
-            onChange={onChangeHandler}
-            value={data.password}
-            type="password"
-            placeholder="Password"
-            required
-          />
+          {currentState === 'Login' ? (
+            <input
+              name="password"
+              onChange={onChangeHandler}
+              value={data.password}
+              type="password"
+              placeholder="Password"
+              required
+            />
+          ) : (
+            <input
+              name="password"
+              onChange={onChangeHandler}
+              value={data.password}
+              type="password"
+              placeholder="Password"
+              required
+            />
+          )}
         </div>
-        <button type="submit">
-          {currentState === 'Login' ? 'Accedi' : 'Crea Account'}
+        <button type="submit" disabled={loading}>
+          {loading
+            ? 'Caricamento...'
+            : currentState === 'Login'
+            ? 'Accedi'
+            : 'Crea Account'}
         </button>
         <div className="login-popup-condition">
           {currentState === 'Login' ? null : <input type="checkbox" required />}

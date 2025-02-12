@@ -11,12 +11,15 @@ import Ingredients from './pages/Ingredients/Ingredients';
 import { MenuProvider } from './context/MenuContext';
 import Verify from './pages/Verify/Verify';
 import MyOrders from './pages/MyOrders/MyOrders';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
 
   return (
     <MenuProvider>
+      <ToastContainer />
       {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : null}
       <div className="content">
         <div className="app">

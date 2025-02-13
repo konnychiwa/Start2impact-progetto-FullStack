@@ -141,7 +141,7 @@ This section shows with what I built my project, MERN is a pre-built technology 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 

@@ -220,12 +220,6 @@ Pamoda Angelo Konara - [@my_linkedin](https://www.linkedin.com/in/pamoda-angelo-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [React](https://react.dev/)
-* [Node.js](https://nodejs.org)
-* [Express.js](https://expressjs.com)
-* [MongoDB](https://www.mongodb.com)
 * [NPM](https://www.npmjs.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

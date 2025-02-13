@@ -10,7 +10,7 @@ const Header = () => {
       <div className="header-contents">
         <h2>Cosa ordiniamo oggi?</h2>
         <p>
-          Scegli tra tanti piatti, ti piace qualocosa? ordinalo e aspetta che un
+          Scegli tra tanti piatti, ti piace qualcosa? Ordinalo e aspetta che un
           rider te lo porti a casa!
         </p>
         <Link to="/menu">

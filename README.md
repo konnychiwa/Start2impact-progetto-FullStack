@@ -31,7 +31,9 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://user-cookio.vercel.app/">View User Demo</a>
+    ·
+    <a href="https://admin-cookio.vercel.app/">View Admin Demo</a>
 </div>
 
 
@@ -53,6 +55,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#usage">Usage</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -63,7 +66,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 ### User Front End
-![User Front End Screen Shot][user-frontend-screenshot]
+[![User Front End Screen Shot][user-frontend-screenshot]](https://user-cookio.vercel.app/)
 
 This website is inspired by many delivery apps like Deliveroo, Just Eat, etc.
 The idea originates from an imaginary food delivery service called Cookio. All the assets have been AI-generated, provided by different sources, or modified by me using Photoshop to fit my needs.
@@ -83,7 +86,7 @@ After proceeding, you are taken to another page where you enter your address, em
 Everything is connected to the Admin panel, ensuring smooth order management.
 
 ### Admin Front End
-![Admin End Screen Shot][admin-frontend-screenshot]
+[![Admin End Screen Shot][admin-frontend-screenshot]](https://admin-cookio.vercel.app/)
 
 In the Admin Panel, you have full control over the menu and user orders.
 
@@ -203,6 +206,15 @@ This is an example of how to list things you need to use the software and how to
    the Admin panel is running at http://localhost:5173 and
    the Back End is running at http://localhost:4000.
    
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+With out install locally the website you can use it as the:
+* User at: https://user-cookio.vercel.app/
+* Admin at: https://admin-cookio.vercel.app/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

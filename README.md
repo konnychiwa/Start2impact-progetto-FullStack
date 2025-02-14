@@ -199,6 +199,11 @@ Qui, dovresti definire tutte le variabili d'ambiente necessarie, come:
    Se hai seguito tutto correttamente, il Front End sta girando su http://localhost:5174,
    il pannello Admin sta girando su http://localhost:5173 e
    il Back End sta girando su http://localhost:4000.
+8. Cambia l'URL del remote Git per evitare push accidentali al progetto di base
+   ```sh
+   git remote set-url origin github_username/repo_name
+   git remote -v # confirm the changes
+   ```
    
 <p align="right">(<a href="#readme-top">torna in cima</a>)</p>
 

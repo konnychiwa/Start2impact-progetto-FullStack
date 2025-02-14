@@ -45,8 +45,8 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#features">Features</a></li>
+    <li><a href="#dependencies">Dependencies</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -235,21 +235,42 @@ This are Stripe test cards and will simulate a successful/denied payment.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+<!-- DEPENDENCIES -->
+## Dependencies 📦
+<a id="dependencies"></a>
+
+[NPM](https://www.npmjs.com)
+
+For the front end:
+* validator	`^13.12.0` Provides string validation (e.g., email format, URL validation, etc.).
+* axios	`^1.7.9` HTTP client for making API requests from the frontend to the backend.
+* react `^18.3.1` JavaScript library for building UI components.
+* react-dom `^18.3.1` Provides React's DOM-specific methods for rendering.
+* react-router-dom `^7.1.3` Enables client-side routing in React applications.
+* react-toastify `^11.0.3` Displays beautiful and customizable notifications in React.
+
+For the back end:
+* bcrypt `^5.1.1` Hashes passwords securely using the bcrypt algorithm.
+* body-parser `^1.20.3` Middleware to parse incoming request bodies (JSON, URL-encoded data).
+* cors `^2.8.5` Enables Cross-Origin Resource Sharing (CORS) for API access from different origins.
+* dotenv `^16.4.7` Loads environment variables from a .env file.
+* express `^4.21.2` A minimal and flexible Node.js framework for building APIs and web apps.
+* jsonwebtoken `^9.0.2` Used for authentication via JSON Web Tokens (JWT).
+* mongoose `^8.9.6` An ODM (Object Data Modeling) library for MongoDB, simplifying database interactions.
+* multer `^1.4.5-lts.1` Middleware for handling file uploads in Node.js.
+* nodemon `^3.1.9` Automatically restarts the server when file changes are detected (useful for development).
+* stripe `^16.12.0` Handles payments securely through the Stripe API.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 <!-- CONTACT -->
 <a id="contact"></a>
 ## Contact 📞
 
 Pamoda Angelo Konara - [linkedin](https://www.linkedin.com/in/pamoda-angelo-konara/) - angelokonara04@gmail.com
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments 🧠
-<a id="acknowledgments"></a>
-
-* [NPM](https://www.npmjs.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -53,10 +53,10 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project ⭐
 <a id="about-the-project"></a>
-### User Front End
+## About The Project ⭐
 <a id="user-front"></a>
+### User Front End
 [![User Front End Screen Shot][user-frontend-screenshot]](https://user-cookio.vercel.app/)
 
 This website is inspired by many delivery apps like Deliveroo, Just Eat, etc.
@@ -76,8 +76,8 @@ After proceeding, you are taken to another page where you enter your address, em
 * If the payment is successful, you are taken to the Order page, where you can track your order whether it is being prepared, on its way, or has already been delivered.
 Everything is connected to the Admin panel, ensuring smooth order management.
 
-### Admin Front End
 <a id="admin-front"></a>
+### Admin Front End
 [![Admin End Screen Shot][admin-frontend-screenshot]](https://admin-cookio.vercel.app/)
 
 In the Admin Panel, you have full control over the menu and user orders.
@@ -98,8 +98,8 @@ The second button displays a list of all menu items, including their details. Fr
 Manage Orders:
 The third button shows all active orders placed by users. As an admin, you can update the order status at any time, tracking its progress from preparation to delivery.
 
-### Back End
 <a id="backend"></a>
+### Back End
 
 The back is made with Node.js, Express and MongoDB.
 * config – Contains the database connection setup using Mongoose.
@@ -115,9 +115,8 @@ This structured approach ensures scalability, maintainability, and clean code or
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-### Built With 🔨
 <a id="built-with"></a>
+### Built With 🔨
 
 This section shows with what I built my project, MERN is a pre-built technology stack based on JavaScript technologies. MERN stands for MongoDB, Express, React, and Node, after the four key technologies that make up the stack.
 
@@ -133,8 +132,8 @@ This section shows with what I built my project, MERN is a pre-built technology 
 
 
 <!-- GETTING -->
-## Getting Started 🔢
 <a id="getting started"></a>
+## Getting Started 🔢
 
 To get a local copy up and running follow these simple steps.
 
@@ -205,8 +204,8 @@ This is an example of how to list things you need to use the software and how to
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE -->
-## Usage ❓
 <a id="usage"></a>
+## Usage ❓
 ### Stripe Payment
 For the stripe payment, to try if it works, use this dummy card:
 
@@ -225,8 +224,8 @@ This are Stripe test cards and will simulate a successful/denied payment.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FEATURES -->
-## Features 🚀
 <a id="features"></a>
+## Features 🚀
 
 * Order food online
 * Possibility to add/remove foods from the menu with a click
@@ -237,8 +236,8 @@ This are Stripe test cards and will simulate a successful/denied payment.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
-## Contact 📞
 <a id="contact"></a>
+## Contact 📞
 
 Pamoda Angelo Konara - [linkedin](https://www.linkedin.com/in/pamoda-angelo-konara/) - angelokonara04@gmail.com
 

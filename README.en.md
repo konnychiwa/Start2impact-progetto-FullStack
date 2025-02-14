@@ -1,5 +1,5 @@
 <a id="readme-top"></a>
-
+Disponibile in italiano: [IT Italiano](README.md)
 
 
 <!-- PROJECT SHIELDS -->
@@ -130,7 +130,6 @@ This section shows with what I built my project, MERN is a pre-built technology 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- GETTING -->
 <a id="getting-started"></a>
 ## Getting Started 🔢
@@ -200,8 +199,8 @@ This is an example of how to list things you need to use the software and how to
    the Admin panel is running at http://localhost:5173 and
    the Back End is running at http://localhost:4000.
    
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- USAGE -->
 <a id="usage"></a>
@@ -223,6 +222,7 @@ This are Stripe test cards and will simulate a successful/denied payment.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- FEATURES -->
 <a id="features"></a>
 ## Features 🚀
@@ -237,12 +237,12 @@ This are Stripe test cards and will simulate a successful/denied payment.
 
 
 <!-- DEPENDENCIES -->
-## Dependencies 📦
 <a id="dependencies"></a>
+## Dependencies 📦
 
 [NPM](https://www.npmjs.com)
 
-For the front end:
+For the Front End:
 * validator	`^13.12.0` Provides string validation (e.g., email format, URL validation, etc.).
 * axios	`^1.7.9` HTTP client for making API requests from the frontend to the backend.
 * react `^18.3.1` JavaScript library for building UI components.
@@ -250,7 +250,7 @@ For the front end:
 * react-router-dom `^7.1.3` Enables client-side routing in React applications.
 * react-toastify `^11.0.3` Displays beautiful and customizable notifications in React.
 
-For the back end:
+For the Back End:
 * bcrypt `^5.1.1` Hashes passwords securely using the bcrypt algorithm.
 * body-parser `^1.20.3` Middleware to parse incoming request bodies (JSON, URL-encoded data).
 * cors `^2.8.5` Enables Cross-Origin Resource Sharing (CORS) for API access from different origins.
@@ -270,13 +270,16 @@ For the back end:
 <a id="contact"></a>
 ## Contact 📞
 
-Pamoda Angelo Konara - [linkedin](https://www.linkedin.com/in/pamoda-angelo-konara/) - angelokonara04@gmail.com
+Pamoda Angelo Konara - angelokonara04@gmail.com
+
+[linkedin](https://www.linkedin.com/in/pamoda-angelo-konara/)
+
+[github](https://github.com/konnychiwa)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/pamoda-angelo-konara/
 

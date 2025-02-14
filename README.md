@@ -41,6 +41,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#features">Contact</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -49,7 +50,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About The Project ⭐
 ### User Front End
 [![User Front End Screen Shot][user-frontend-screenshot]](https://user-cookio.vercel.app/)
 
@@ -108,7 +109,7 @@ This structured approach ensures scalability, maintainability, and clean code or
 
 
 
-### Built With
+### Built With 🔨
 
 This section shows with what I built my project, MERN is a pre-built technology stack based on JavaScript technologies. MERN stands for MongoDB, Express, React, and Node, after the four key technologies that make up the stack.
 
@@ -124,7 +125,7 @@ This section shows with what I built my project, MERN is a pre-built technology 
 
 
 <!-- GETTING -->
-## Getting Started
+## Getting Started 🔢
 
 To get a local copy up and running follow these simple steps.
 
@@ -195,7 +196,7 @@ This is an example of how to list things you need to use the software and how to
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE -->
-## Usage
+## Usage ❓
 ### Stripe Payment
 For the stripe payment, to try if it works, use this dummy card:
 
@@ -213,10 +214,19 @@ This are Stripe test cards and will simulate a successful/denied payment.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FEATURES -->
+## Features 🚀
 
+* Order food online
+* Possibility to add/remove foods from the menu with a click
+* Secure payment with Stripe
+* Track your orders in real-time
+* Beautiful UI popups with react-toastify
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
-## Contact
+## Contact 📞
 
 Pamoda Angelo Konara - [linkedin](https://www.linkedin.com/in/pamoda-angelo-konara/) - angelokonara04@gmail.com
 
@@ -225,7 +235,7 @@ Pamoda Angelo Konara - [linkedin](https://www.linkedin.com/in/pamoda-angelo-kona
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Acknowledgments 🧠
 
 * [NPM](https://www.npmjs.com)
 
@@ -234,7 +244,6 @@ Pamoda Angelo Konara - [linkedin](https://www.linkedin.com/in/pamoda-angelo-kona
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/pamoda-angelo-konara/
 

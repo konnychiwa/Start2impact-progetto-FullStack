@@ -1,11 +1,7 @@
 <a id="readme-top"></a>
 
-
-
 <!-- PROJECT SHIELDS -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -16,265 +12,226 @@
 
   <p align="center">
     <br />
-    <a href="https://user-cookio.vercel.app/">View User Demo</a>
+    <a href="https://user-cookio.vercel.app/">Guarda la demo utente</a>
     ·
-    <a href="https://admin-cookio.vercel.app/">View Admin Demo</a>
+    <a href="https://admin-cookio.vercel.app/">Guarda la demo Admin</a>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Indice</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">Informazioni sul progetto</a>
       <ul>
         <li><a href="#user-front">User Front End</a></li>
         <li><a href="#admin-front">Admin Front End</a></li>
         <li><a href="#backend">Back End</a></li>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Tecnologie utilizzate</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Iniziare</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites">Prerequisiti</a></li>
+        <li><a href="#installation">Installazione</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#dependencies">Dependencies</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#usage">Uso</a></li>
+    <li><a href="#features">Funzionalità</a></li>
+    <li><a href="#dependencies">Dipendenze</a></li>
+    <li><a href="#contact">Contatti</a></li>
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 <a id="about-the-project"></a>
-## About The Project ⭐
+## Informazioni sul progetto ⭐
 <a id="user-front"></a>
 ### User Front End
 [![User Front End Screen Shot][user-frontend-screenshot]](https://user-cookio.vercel.app/)
 
-This website is inspired by many delivery apps like Deliveroo, Just Eat, etc.
-The idea originates from an imaginary food delivery service called Cookio. All the assets have been AI-generated, provided by different sources, or modified by me using Photoshop to fit my needs.
+Questo sito web è ispirato a molte app di consegna come Deliveroo, Just Eat, ecc.  
+L'idea nasce da un servizio immaginario di consegna di cibo chiamato Cookio. Tutti gli asset sono stati generati dall'AI, forniti da diverse fonti o modificati da me usando Photoshop per adattarli alle mie esigenze.
 
-When you first enter the website, you see the header with the navbar. The navbar follows you as you scroll down, I made this decision to simplify navigation so that users can easily access the menu at any time. In the navbar, the logo is positioned in the top left, while in the center, you can switch between Home, Menu, or jump directly to the footer. In the top right, there is a cart icon and the option to register or log in. Once logged in, the login button is replaced by a user icon. When you hover over the user icon, a dropdown menu appears, allowing you to view your orders (if you've placed any) or log out.
+Quando entri nel sito web, vedrai l'intestazione con la navbar. La navbar ti seguirà mentre scorri verso il basso. Ho preso questa decisione per semplificare la navigazione, in modo che gli utenti possano accedere facilmente al menu in qualsiasi momento. Nella navbar, il logo è posizionato in alto a sinistra, mentre al centro puoi passare tra Home, Menu o saltare direttamente al footer. In alto a destra, c'è l'icona del carrello e la possibilità di registrarsi o effettuare il login. Una volta effettuato il login, il pulsante di login viene sostituito con l'icona dell'utente. Quando ci passi sopra, appare un menu a discesa che ti permette di visualizzare i tuoi ordini (se ne hai effettuati) o disconnetterti.
 
-The header image is AI-generated, and all the text has been written by me to be both visually appealing and engaging. There is also a button that takes you directly to the menu. Scrolling down, you will see a section explaining how the website works, followed by an option to install the mobile app (if available), and finally, the footer with all necessary information.
+L'immagine dell'intestazione è generata dall'AI e tutto il testo è stato scritto da me per essere visivamente attraente e coinvolgente. C'è anche un pulsante che ti porta direttamente al menu. Scorrendo verso il basso, vedrai una sezione che spiega come funziona il sito, seguita da un'opzione per installare l'app mobile (se disponibile), e infine il footer con tutte le informazioni necessarie.
 
-In the Menu section, you can browse and order food. You can search for dishes by category, add them using the "+" button, and remove them as needed. Everything is connected to the backend, ensuring real-time updates. If you add an item, it immediately appears in the cart along with its price.
+Nella sezione Menu, puoi navigare e ordinare il cibo. Puoi cercare piatti per categoria, aggiungerli utilizzando il pulsante "+" e rimuoverli quando necessario. Tutto è connesso al backend, garantendo aggiornamenti in tempo reale. Se aggiungi un articolo, appare immediatamente nel carrello con il suo prezzo.
 
-Once you've selected everything you want to buy, you can proceed to the Cart. Here, you will see images of the selected dishes, their names, prices, quantities, total cost, and an option to remove them. The Proceed to Payment button is only activated if you have items in the cart and are logged in.
+Una volta selezionato tutto ciò che desideri acquistare, puoi procedere al Carrello. Qui vedrai le immagini dei piatti selezionati, i loro nomi, i prezzi, le quantità, il costo totale e un'opzione per rimuoverli. Il pulsante "Procedi al pagamento" sarà attivato solo se hai articoli nel carrello e sei loggato.
 
-After proceeding, you are taken to another page where you enter your address, email, and phone number before completing the payment. I integrated Stripe for payments, though it is not fully set up yet. I used a dummy card provided by Stripe for testing. There are two possible outcomes:
+Procedendo, verrai indirizzato a una pagina in cui inserire il tuo indirizzo, email e numero di telefono prima di completare il pagamento. Ho integrato Stripe per i pagamenti, anche se non è completamente configurato. Ho usato una carta di test fornita da Stripe. Ci sono due possibili esiti:
 
-* If the payment is rejected for any reason, you are redirected back to the homepage.
-* If the payment is successful, you are taken to the Order page, where you can track your order whether it is being prepared, on its way, or has already been delivered.
-Everything is connected to the Admin panel, ensuring smooth order management.
+* Se il pagamento viene rifiutato per qualsiasi motivo, verrai reindirizzato alla homepage.
+* Se il pagamento ha successo, verrai portato alla pagina Ordini, dove potrai tracciare il tuo ordine, che sia in preparazione, in transito o già consegnato.
+Tutto è connesso al pannello di amministrazione, garantendo una gestione fluida degli ordini.
 
 <a id="admin-front"></a>
 ### Admin Front End
 [![Admin End Screen Shot][admin-frontend-screenshot]](https://admin-cookio.vercel.app/)
 
-In the Admin Panel, you have full control over the menu and user orders.
+Nel pannello di amministrazione, hai il controllo completo sul menu e sugli ordini degli utenti.
 
-Manage Menu Items:
-With the first button, you can add or remove a dish from the menu. To add a new item, simply provide:
+Gestisci gli articoli del menu:  
+Con il primo pulsante, puoi aggiungere o rimuovere un piatto dal menu. Per aggiungere un nuovo elemento, basta fornire:
 
-* An image of the dish
-* The product name
-* A brief description
-* The food category
-* The price
-Once added, the new dish will be available in the menu for users.
+* Un'immagine del piatto  
+* Il nome del prodotto  
+* Una breve descrizione  
+* La categoria del cibo  
+* Il prezzo  
+Una volta aggiunto, il nuovo piatto sarà disponibile nel menu per gli utenti.
 
-View & Remove Items:
-The second button displays a list of all menu items, including their details. From here, you can review the existing items and remove any dish if necessary.
+Visualizza e rimuovi articoli:  
+Il secondo pulsante mostra un elenco di tutti gli articoli del menu, inclusi i loro dettagli. Da qui, puoi rivedere gli elementi esistenti e rimuovere un piatto se necessario.
 
-Manage Orders:
-The third button shows all active orders placed by users. As an admin, you can update the order status at any time, tracking its progress from preparation to delivery.
+Gestisci ordini:  
+Il terzo pulsante mostra tutti gli ordini attivi effettuati dagli utenti. Come amministratore, puoi aggiornare lo stato dell'ordine in qualsiasi momento, tracciandone il progresso dalla preparazione alla consegna.
 
 <a id="backend"></a>
 ### Back End
 
-The back is made with Node.js, Express and MongoDB.
-* config – Contains the database connection setup using Mongoose.
-* middleware – Manages user authentication for the website.
-* models – Defines all Mongoose schemas used to store data for the API.
-* controllers – Handles the core business logic and interactions between the frontend and database.
-* routes – Defines API endpoints and connects them to their respective controllers.
-* server.js – The entry point of the backend, where the API logic is implemented and the server is started.
-* uploads - Contains all the images of the foods that has been uploaded in the admin panel.
+Il back end è realizzato con Node.js, Express e MongoDB.  
+* config – Contiene la configurazione della connessione al database usando Mongoose.  
+* middleware – Gestisce l'autenticazione dell'utente per il sito web.  
+* models – Definisce tutti gli schemi Mongoose utilizzati per archiviare i dati nell'API.  
+* controllers – Gestisce la logica di business principale e le interazioni tra il frontend e il database.  
+* routes – Definisce gli endpoint API e li collega ai rispettivi controller.  
+* server.js – Il punto di ingresso del backend, dove viene implementata la logica dell'API e avviato il server.  
+* uploads – Contiene tutte le immagini dei cibi caricate nel pannello di amministrazione.
 
-This structured approach ensures scalability, maintainability, and clean code organization.
+Questo approccio strutturato garantisce scalabilità, manutenzione e una buona organizzazione del codice.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <a id="built-with"></a>
-### Built With 🔨
+### Tecnologie utilizzate 🔨
 
-This section shows with what I built my project, MERN is a pre-built technology stack based on JavaScript technologies. MERN stands for MongoDB, Express, React, and Node, after the four key technologies that make up the stack.
+Questa sezione mostra con cosa ho costruito il mio progetto, MERN è una stack tecnologica pre-costruita basata su tecnologie JavaScript. MERN sta per MongoDB, Express, React e Node, le quattro tecnologie chiave che compongono la stack.
 
 * [![React][React.js]][React-url]  
 * [![Vite][Vite.js]][Vite-url]  
-* [![Node.js][Node.js]][Node-url]
-* [![Express.js][Express.js]][Express-url] 
+* [![Node.js][Node.js]][Node-url]  
+* [![Express.js][Express.js]][Express-url]  
 * [![MongoDB][MongoDB.com]][MongoDB-url]  
-* [![Stripe][Stripe.com]][Stripe-url]  
+* [![Stripe][Stripe.com]][Stripe-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING -->
 <a id="getting-started"></a>
-## Getting Started 🔢
+## Iniziare 🔢
 
-To get a local copy up and running follow these simple steps.
+Per ottenere una copia locale e avviare il progetto, segui questi semplici passaggi.
 
-### Prerequisites
+### Prerequisiti
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Ecco un esempio di come elencare le cose di cui hai bisogno per usare il software e come installarle.  
+* npm  
   ```sh
   npm install npm@latest -g
-  ```
+Installazione
+Clona il repository nel tuo editor
 
-### Installation
+sh
+Copia
+Modifica
+git clone https://github.com/konnychiwa/Start2impact-progetto-FullStack.git
+Apri il terminale nel tuo editor
 
-1. Clone the repo in your editor
-   ```sh
-   git clone https://github.com/konnychiwa/Start2impact-progetto-FullStack.git
-   ```
-2. Open the terminal in your editor  
-3. Install NPM packages in all the 3 folders
-   ```sh
-   cd frontend
-   npm install
-   ```
-   ```sh
-   cd ../admin
-   npm install
-   ```
-   ```sh
-   cd ../backend
-   npm install
-   ```
-4. Set Up Environment Variables
-   ```sh
-   cd backend
-   ```
-   create a .env file inside the folder and add
-   ```js
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   STRIPE_SECRET_KEY=your_stripe_secret_key
-   ```
-   Here, you should define all necessary environment variables such as:
-   * the MongoDB connection string from creating a cluster at https://www.mongodb.com
-   * JWT secret, is the way you want to crypt the password of the users
-   * Stripe API keys by getting the API at your own dashboard at https://stripe.com
-6. Run the Front end
-   ```sh
-   cd admin
-   npm run dev
-   ```
-   make sure that the Front end is running at http://localhost:5174,
-   by doing npm run dev in the admin before, or go in the backend folder -> controllers -> orderController.js:10
-   change frontend_url with what you are using for hosting the front end
-   ```sh
-   cd ../frontend
-   npm run dev
-   ```
-   ```sh
-   cd ../backend
-   npm run server
-   ```
-7. Try the application
-   If you have followed everything the Front End is running at http://localhost:5174,
-   the Admin panel is running at http://localhost:5173 and
-   the Back End is running at http://localhost:4000.
-   
+Installa i pacchetti NPM in tutte e 3 le cartelle
+
+sh
+Copia
+Modifica
+cd frontend
+npm install
+sh
+Copia
+Modifica
+cd ../admin
+npm install
+sh
+Copia
+Modifica
+cd ../backend
+npm install
+Configura le variabili d'ambiente
+
+sh
+Copia
+Modifica
+cd backend
+Crea un file .env nella cartella e aggiungi
+
+js
+Copia
+Modifica
+MONGO_URI=your_mongodb_connection_string  
+JWT_SECRET=your_jwt_secret  
+STRIPE_SECRET_KEY=your_stripe_secret_key  
+Qui, dovresti definire tutte le variabili d'ambiente necessarie, come:
+
+la stringa di connessione MongoDB creata creando un cluster su https://www.mongodb.com
+JWT secret, è il metodo che vuoi usare per criptare la password degli utenti
+Chiave segreta di Stripe (puoi trovarla su https://dashboard.stripe.com/test/apikeys)
+Avvia il progetto
+
+Avvia il backend:
+
+sh
+Copia
+Modifica
+cd backend  
+npm run dev
+Avvia il frontend dell'utente:
+
+sh
+Copia
+Modifica
+cd frontend  
+npm run dev
+Avvia il frontend dell'amministratore:
+
+sh
+Copia
+Modifica
+cd admin  
+npm run dev
+Il progetto dovrebbe ora essere attivo e funzionante.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- USAGE -->
 <a id="usage"></a>
-## Usage ❓
-### Stripe Payment
-For the stripe payment, to try if it works, use this dummy card:
 
-If you want the payment to be accepted, use the test card number 4000 0038 0000 0008, along with:
-* Expiration Date: Any future date (e.g., 12/30)
-* CVC: Any 3-digit number (e.g., 123)
-* then you are going to be redirected to your order page
-
-If you want the payment to be denied, use the test card number 4000 0038 0000 0002, along with:
-* Expiration Date: Any future date (e.g., 12/30)
-* CVC: Any 3-digit number (e.g., 123)
-* then when the cart is denied you can go back and see that the order has been deleted
-
-This are Stripe test cards and will simulate a successful/denied payment.
+Uso
+Puoi ora avviare il progetto in locale. La home dell'utente sarà su http://localhost:5173, mentre quella dell'amministratore sarà su http://localhost:5174. Inizia a testare le funzionalità come descritto nella sezione delle funzionalità.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FEATURES -->
 <a id="features"></a>
-## Features 🚀
 
-* Order food online
-* Possibility to add/remove foods from the menu with a click
-* Secure payment with Stripe
-* Track your orders in real-time
-* Beautiful UI popups with react-toastify
-
+Funzionalità ✨
+La pagina Home ha una sezione introduttiva e un menu facilmente navigabile.
+Gli utenti possono selezionare e aggiungere piatti al carrello.
+Gli utenti possono visualizzare il loro carrello e proseguire al pagamento con Stripe.
+I pannelli di amministrazione permettono di aggiungere e rimuovere piatti dal menu e visualizzare gli ordini.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- DEPENDENCIES -->
-## Dependencies 📦
 <a id="dependencies"></a>
 
-[NPM](https://www.npmjs.com)
-
-For the front end:
-* validator	`^13.12.0` Provides string validation (e.g., email format, URL validation, etc.).
-* axios	`^1.7.9` HTTP client for making API requests from the frontend to the backend.
-* react `^18.3.1` JavaScript library for building UI components.
-* react-dom `^18.3.1` Provides React's DOM-specific methods for rendering.
-* react-router-dom `^7.1.3` Enables client-side routing in React applications.
-* react-toastify `^11.0.3` Displays beautiful and customizable notifications in React.
-
-For the back end:
-* bcrypt `^5.1.1` Hashes passwords securely using the bcrypt algorithm.
-* body-parser `^1.20.3` Middleware to parse incoming request bodies (JSON, URL-encoded data).
-* cors `^2.8.5` Enables Cross-Origin Resource Sharing (CORS) for API access from different origins.
-* dotenv `^16.4.7` Loads environment variables from a .env file.
-* express `^4.21.2` A minimal and flexible Node.js framework for building APIs and web apps.
-* jsonwebtoken `^9.0.2` Used for authentication via JSON Web Tokens (JWT).
-* mongoose `^8.9.6` An ODM (Object Data Modeling) library for MongoDB, simplifying database interactions.
-* multer `^1.4.5-lts.1` Middleware for handling file uploads in Node.js.
-* nodemon `^3.1.9` Automatically restarts the server when file changes are detected (useful for development).
-* stripe `^16.12.0` Handles payments securely through the Stripe API.
-
-
+Dipendenze
+bcrypt: ^5.1.1 Cripta le password in modo sicuro utilizzando l'algoritmo bcrypt.
+body-parser: ^1.20.3 Middleware per analizzare i corpi delle richieste in entrata (JSON, dati URL-encoded).
+cors: ^2.8.5 Abilita il Cross-Origin Resource Sharing (CORS) per consentire l'accesso all'API da origini diverse.
+dotenv: ^16.4.7 Carica le variabili d'ambiente da un file .env.
+express: ^4.21.2 Un framework Node.js minimalista e flessibile per costruire API e applicazioni web.
+jsonwebtoken: ^9.0.2 Utilizzato per l'autenticazione tramite JSON Web Tokens (JWT).
+mongoose: ^8.9.6 Una libreria ODM (Object Data Modeling) per MongoDB, che semplifica le interazioni con il database.
+multer: ^1.4.5-lts.1 Middleware per gestire il caricamento dei file in Node.js.
+nodemon: ^3.1.9 Riavvia automaticamente il server quando rileva modifiche ai file (utile per lo sviluppo).
+stripe: ^16.12.0 Gestisce i pagamenti in modo sicuro tramite l'API di Stripe.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- CONTACT -->
 <a id="contact"></a>
-## Contact 📞
-
-Pamoda Angelo Konara - [linkedin](https://www.linkedin.com/in/pamoda-angelo-konara/) - angelokonara04@gmail.com
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555

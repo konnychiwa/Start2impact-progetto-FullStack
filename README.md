@@ -1,14 +1,18 @@
 <a id="readme-top"></a>
+Available in English: [EN English](README.en.md)
+
 
 <!-- PROJECT SHIELDS -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
+
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
     <img src="public/assets/cookioLogo.png" alt="Logo" width="80" height="80">
 
-  <h3 align="center">Cookio - Delivery App - User frontend and Admin panel</h3>
+  <h3 align="center">Cookio - App di Consegna Cibo - Interfaccia Utente e Pannello Admin</h3>
 
   <p align="center">
     <br />
@@ -17,6 +21,8 @@
     <a href="https://admin-cookio.vercel.app/">Guarda la demo Admin</a>
 </div>
 
+
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Indice</summary>
@@ -24,17 +30,17 @@
     <li>
       <a href="#about-the-project">Informazioni sul progetto</a>
       <ul>
-        <li><a href="#user-front">User Front End</a></li>
-        <li><a href="#admin-front">Admin Front End</a></li>
+        <li><a href="#user-front">Interfaccia Utente</a></li>
+        <li><a href="#admin-front">Interfaccia Admin</a></li>
         <li><a href="#backend">Back End</a></li>
         <li><a href="#built-with">Tecnologie utilizzate</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Iniziare</a>
+      <a href="#getting-started">Come Iniziare</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisiti</a></li>
-        <li><a href="#installation">Installazione</a></li>
+        <li><a href="#prerequisiti">Prerequisiti</a></li>
+        <li><a href="#installazione">Installazione</a></li>
       </ul>
     </li>
     <li><a href="#usage">Uso</a></li>
@@ -44,11 +50,13 @@
   </ol>
 </details>
 
+
+
 <!-- ABOUT THE PROJECT -->
 <a id="about-the-project"></a>
 ## Informazioni sul progetto ⭐
 <a id="user-front"></a>
-### User Front End
+### Interfaccia Utente
 [![User Front End Screen Shot][user-frontend-screenshot]](https://user-cookio.vercel.app/)
 
 Questo sito web è ispirato a molte app di consegna come Deliveroo, Just Eat, ecc.  
@@ -69,7 +77,7 @@ Procedendo, verrai indirizzato a una pagina in cui inserire il tuo indirizzo, em
 Tutto è connesso al pannello di amministrazione, garantendo una gestione fluida degli ordini.
 
 <a id="admin-front"></a>
-### Admin Front End
+### Interfaccia Admin
 [![Admin End Screen Shot][admin-frontend-screenshot]](https://admin-cookio.vercel.app/)
 
 Nel pannello di amministrazione, hai il controllo completo sul menu e sugli ordini degli utenti.
@@ -104,7 +112,8 @@ Il back end è realizzato con Node.js, Express e MongoDB.
 
 Questo approccio strutturato garantisce scalabilità, manutenzione e una buona organizzazione del codice.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">torna in cima</a>)</p>
+
 
 <a id="built-with"></a>
 ### Tecnologie utilizzate 🔨
@@ -118,122 +127,156 @@ Questa sezione mostra con cosa ho costruito il mio progetto, MERN è una stack t
 * [![MongoDB][MongoDB.com]][MongoDB-url]  
 * [![Stripe][Stripe.com]][Stripe-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">torna in cima</a>)</p>
 
-<!-- GETTING -->
+
 <a id="getting-started"></a>
-## Iniziare 🔢
+## Come Iniziare 🔢
 
 Per ottenere una copia locale e avviare il progetto, segui questi semplici passaggi.
 
+<a id="prerequisiti"></a>
 ### Prerequisiti
 
-Ecco un esempio di come elencare le cose di cui hai bisogno per usare il software e come installarle.  
+Ecco le cose di cui hai bisogno per usare il software e come installarle.  
 * npm  
   ```sh
   npm install npm@latest -g
-Installazione
-Clona il repository nel tuo editor
+  ```
 
-sh
-Copia
-Modifica
-git clone https://github.com/konnychiwa/Start2impact-progetto-FullStack.git
-Apri il terminale nel tuo editor
-
-Installa i pacchetti NPM in tutte e 3 le cartelle
-
-sh
-Copia
-Modifica
-cd frontend
-npm install
-sh
-Copia
-Modifica
-cd ../admin
-npm install
-sh
-Copia
-Modifica
-cd ../backend
-npm install
-Configura le variabili d'ambiente
-
-sh
-Copia
-Modifica
-cd backend
-Crea un file .env nella cartella e aggiungi
-
-js
-Copia
-Modifica
-MONGO_URI=your_mongodb_connection_string  
-JWT_SECRET=your_jwt_secret  
-STRIPE_SECRET_KEY=your_stripe_secret_key  
+<a id="installazione"></a>
+### Installazione
+1. Clone the repo in your editor
+   ```sh
+   git clone https://github.com/konnychiwa/Start2impact-progetto-FullStack.git
+   ```
+2. Open the terminal in your editor  
+3. Install NPM packages in all the 3 folders
+   ```sh
+   cd frontend
+   npm install
+   ```
+   ```sh
+   cd ../admin
+   npm install
+   ```
+   ```sh
+   cd ../backend
+   npm install
+   ```
+4. Impostare le Variabili d'Ambiente
+   ```sh
+   cd backend
+   ```
+   creare un file .env dentro alla cartella e aggiungere
+   ```js
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   STRIPE_SECRET_KEY=your_stripe_secret_key
+   ```
 Qui, dovresti definire tutte le variabili d'ambiente necessarie, come:
 
-la stringa di connessione MongoDB creata creando un cluster su https://www.mongodb.com
-JWT secret, è il metodo che vuoi usare per criptare la password degli utenti
-Chiave segreta di Stripe (puoi trovarla su https://dashboard.stripe.com/test/apikeys)
-Avvia il progetto
+* la stringa di connessione a MongoDB, che ottieni creando un cluster su https://www.mongodb.com
+* il segreto JWT, che è il modo in cui desideri criptare la password degli utenti
+* le chiavi API di Stripe, che puoi ottenere nel tuo pannello di controllo su https://stripe.com
+  
+6. Avvia il Front End
+   ```sh
+   cd admin
+   npm run dev
+   ```
+   Assicurati che il Front end stia girando su http://localhost:5174, eseguendo npm run dev nel folder admin prima. In alternativa, puoi andare nella cartella backend -> controllers -> orderController.js:10 e 
+   modificare frontend_url con l'URL che stai usando per ospitare il front end.
+   ```sh
+   cd ../frontend
+   npm run dev
+   ```
+   ```sh
+   cd ../backend
+   npm run server
+   ```
+7. Prova l'applicazione
+   Se hai seguito tutto correttamente, il Front End sta girando su http://localhost:5174,
+   il pannello Admin sta girando su http://localhost:5173 e
+   il Back End sta girando su http://localhost:4000.
+   
+<p align="right">(<a href="#readme-top">torna in cima</a>)</p>
 
-Avvia il backend:
 
-sh
-Copia
-Modifica
-cd backend  
-npm run dev
-Avvia il frontend dell'utente:
-
-sh
-Copia
-Modifica
-cd frontend  
-npm run dev
-Avvia il frontend dell'amministratore:
-
-sh
-Copia
-Modifica
-cd admin  
-npm run dev
-Il progetto dovrebbe ora essere attivo e funzionante.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <a id="usage"></a>
+## Uso ❓
+### Pagamento con Stripe
+Per provare il pagamento con Stripe, utilizza questa carta di prova:
 
-Uso
-Puoi ora avviare il progetto in locale. La home dell'utente sarà su http://localhost:5173, mentre quella dell'amministratore sarà su http://localhost:5174. Inizia a testare le funzionalità come descritto nella sezione delle funzionalità.
+Se desideri che il pagamento venga accettato, usa il numero della carta di test 4000 0038 0000 0008, insieme a:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+* Data di Scadenza: Qualsiasi data futura (ad esempio, 12/30)
+* CVC: Qualsiasi numero a 3 cifre (ad esempio, 123)
+* Dopodiché verrai reindirizzato alla pagina dell'ordine
+
+Se desideri che il pagamento venga rifiutato, usa il numero della carta di test 4000 0038 0000 0002, insieme a:
+
+* Data di Scadenza: Qualsiasi data futura (ad esempio, 12/30)
+* CVC: Qualsiasi numero a 3 cifre (ad esempio, 123)
+* Quando il carrello viene rifiutato, puoi tornare indietro e vedere che l'ordine è stato eliminato
+
+Queste sono carte di test di Stripe e simuleranno un pagamento accettato/rifiutato.
+
+<p align="right">(<a href="#readme-top">torna in cima</a>)</p>
+
+
 <a id="features"></a>
+## Funzionalità ✨
+* La pagina Home ha una sezione introduttiva e un menu facilmente navigabile.
+* Gli utenti possono selezionare e aggiungere piatti al carrello.
+* Gli utenti possono visualizzare il loro carrello e proseguire al pagamento con Stripe.
+* I pannelli di amministrazione permettono di aggiungere e rimuovere piatti dal menu e visualizzare gli ordini.
 
-Funzionalità ✨
-La pagina Home ha una sezione introduttiva e un menu facilmente navigabile.
-Gli utenti possono selezionare e aggiungere piatti al carrello.
-Gli utenti possono visualizzare il loro carrello e proseguire al pagamento con Stripe.
-I pannelli di amministrazione permettono di aggiungere e rimuovere piatti dal menu e visualizzare gli ordini.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <a id="dependencies"></a>
 
-Dipendenze
-bcrypt: ^5.1.1 Cripta le password in modo sicuro utilizzando l'algoritmo bcrypt.
-body-parser: ^1.20.3 Middleware per analizzare i corpi delle richieste in entrata (JSON, dati URL-encoded).
-cors: ^2.8.5 Abilita il Cross-Origin Resource Sharing (CORS) per consentire l'accesso all'API da origini diverse.
-dotenv: ^16.4.7 Carica le variabili d'ambiente da un file .env.
-express: ^4.21.2 Un framework Node.js minimalista e flessibile per costruire API e applicazioni web.
-jsonwebtoken: ^9.0.2 Utilizzato per l'autenticazione tramite JSON Web Tokens (JWT).
-mongoose: ^8.9.6 Una libreria ODM (Object Data Modeling) per MongoDB, che semplifica le interazioni con il database.
-multer: ^1.4.5-lts.1 Middleware per gestire il caricamento dei file in Node.js.
-nodemon: ^3.1.9 Riavvia automaticamente il server quando rileva modifiche ai file (utile per lo sviluppo).
-stripe: ^16.12.0 Gestisce i pagamenti in modo sicuro tramite l'API di Stripe.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<a id="contact"></a>
 
-<!-- MARKDOWN LINKS & IMAGES -->
+<a id="dependencies"></a>
+## Dipendenze 📦
+
+[NPM](https://www.npmjs.com)
+
+Per il Front End:
+* validator `^13.12.0` Fornisce la convalida delle stringhe (ad esempio, formato email, convalida URL, ecc.).
+* axios `^1.7.9` Client HTTP per effettuare richieste API dal frontend al backend.
+* react `^18.3.1` Libreria JavaScript per costruire componenti UI.
+* react-dom `^18.3.1` Fornisce i metodi specifici del DOM di React per il rendering.
+* react-router-dom `^7.1.3` Abilita il routing lato client nelle applicazioni React.
+* react-toastify `^11.0.3` Visualizza notifiche belle e personalizzabili in React.
+
+Per il Back End:
+* bcrypt `^5.1.1` Cripta le password in modo sicuro utilizzando l'algoritmo bcrypt.
+* body-parser `^1.20.3` Middleware per analizzare i corpi delle richieste in entrata (JSON, dati URL-encoded).
+* cors `^2.8.5` Abilita il Cross-Origin Resource Sharing (CORS) per consentire l'accesso all'API da origini diverse.
+* dotenv `^16.4.7` Carica le variabili d'ambiente da un file .env.
+* express `^4.21.2` Un framework Node.js minimalista e flessibile per costruire API e applicazioni web.
+* jsonwebtoken `^9.0.2` Utilizzato per l'autenticazione tramite JSON Web Tokens (JWT).
+* mongoose `^8.9.6` Una libreria ODM (Object Data Modeling) per MongoDB, che semplifica le interazioni con il database.
+* multer `^1.4.5-lts.1` Middleware per gestire il caricamento dei file in Node.js.
+* nodemon `^3.1.9` Riavvia automaticamente il server quando rileva modifiche ai file (utile per lo sviluppo).
+* stripe `^16.12.0` Gestisce i pagamenti in modo sicuro tramite l'API di Stripe.
+
+<p align="right">(<a href="#readme-top">torna in cima</a>)</p>
+
+
+<a id="contact"></a>
+## Contatto 📞
+
+Pamoda Angelo Konara - angelokonara04@gmail.com
+
+[linkedin](https://www.linkedin.com/in/pamoda-angelo-konara/)
+
+[github](https://github.com/konnychiwa)
+
+<p align="right">(<a href="#readme-top">torna in cima</a>)</p>
+
+
+
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/pamoda-angelo-konara/
 

@@ -132,7 +132,7 @@ This section shows with what I built my project, MERN is a pre-built technology 
 
 
 <!-- GETTING -->
-<a id="getting started"></a>
+<a id="getting-started"></a>
 ## Getting Started 🔢
 
 To get a local copy up and running follow these simple steps.

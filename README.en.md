@@ -198,6 +198,11 @@ This is an example of how to list things you need to use the software and how to
    If you have followed everything the Front End is running at http://localhost:5174,
    the Admin panel is running at http://localhost:5173 and
    the Back End is running at http://localhost:4000.
+8. Change git remote url to avoid accidental pushes to base project
+   ```sh
+   git remote set-url origin github_username/repo_name
+   git remote -v # confirm the changes
+   ```
    
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -204,7 +204,7 @@ Qui, dovresti definire tutte le variabili d'ambiente necessarie, come:
 
 
 <a id="usage"></a>
-## Uso ❓
+## Utilizzo ❓
 ### Pagamento con Stripe
 Per provare il pagamento con Stripe, utilizza questa carta di prova:
 
